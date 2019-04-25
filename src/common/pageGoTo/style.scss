@@ -1,0 +1,32 @@
+.go-to-gape-wrap{
+    width: 320px;
+    margin: 0 auto;
+    font-size: 15px;
+    height: 30px;
+    margin-top: 60px;
+    span{
+        float: left;
+        height: 100%;
+        display: block;
+        line-height: 30px;
+    }
+    input{
+        width: 120px;
+        margin-left: 10px;
+        float: left;
+        text-align: center;
+    }
+    .go-to{
+        width: 60px;
+        display: block;
+        background:#adadad;
+        margin-left: 7px;
+        border-radius: 5px;
+        text-align: center;
+        cursor: pointer; 
+        float: left;
+        height: 100%;
+        line-height: 30px;
+        font-size: 13px;
+    }
+}

@@ -1,0 +1,16 @@
+.process-wrap{
+    position: fixed;
+    z-index: 7777;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    top : 0px;
+
+    .process{
+        position: relative;
+        display: block;    
+        margin: 0 auto;
+        margin-top: 20%;
+    }
+}
+    
