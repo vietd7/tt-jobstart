@@ -29,7 +29,7 @@ class Login extends Component {
           >
             <div id="form-login-username" className="form-group">
               <label htmlFor="username" className="float-label">
-                Tên đăng nhập
+                Email
               </label>
               <input
                 id="username"
@@ -48,7 +48,7 @@ class Login extends Component {
             </div>
             <div id="form-login-password" className="form-group">
               <label htmlFor="password" className="float-label">
-                Mật khẩu
+                Password
               </label>
               <input
                 id="passwd"
@@ -71,7 +71,7 @@ class Login extends Component {
                 name="Submit"
                 alt="sign in"
               >
-                Đăng nhập
+                Login
               </button>
             </div>
           </form>

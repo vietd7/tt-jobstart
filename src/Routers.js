@@ -15,9 +15,9 @@ const Routers = (data) => {
             <Basepages>
                 <Switch>
                     <Route exact path="/" component={HomeComponent} />
-                    {/* <Route path="/login" component={LoginComponent} />
+                      <Route path="/login" component={LoginComponent} />
                     <Route path="/register" component={Register} />
-                    <Redirect path="*" to="/login" /> */}
+                    <Redirect path="*" to="/" />  
                 </Switch>
             </Basepages>
         )
