@@ -61,12 +61,12 @@ class LandingComponent extends React.Component {
                     </div>
                   </div>
                   <div className="job-post-item-body d-block d-md-flex">
-                    <div className="mr-3"><i class="fa fa-briefcase" aria-hidden="true"></i> <a href="#">Facebook, Inc.</a></div>
+                    <div className="mr-3"><i className="fa fa-briefcase" aria-hidden="true"></i> <a href="#">Facebook, Inc.</a></div>
                     <div><span className="fl-bigmug-line-big104"></span> <span>New York City, USA</span></div>
                   </div>
                 </div>
                 <div className="ml-auto">
-                  <a href="#" className="btn btn-secondary rounded-circle btn-favorite text-gray-500"><i class="fa fa-heart" aria-hidden="true"></i></a>
+                  <a href="#" className="btn btn-secondary rounded-circle btn-favorite text-gray-500"><i className="fa fa-heart" aria-hidden="true"></i></a>
                   <a href="job-single.html" className="btn btn-primary py-2" style={{marginLeft:"20px"}}>Apply Job</a>
                 </div>
               </div>
@@ -83,12 +83,12 @@ class LandingComponent extends React.Component {
                     </div>
                   </div>
                   <div className="job-post-item-body d-block d-md-flex">
-                    <div className="mr-3"><i class="fa fa-briefcase" aria-hidden="true"></i> <a href="#">Facebook, Inc.</a></div>
+                    <div className="mr-3"><i className="fa fa-briefcase" aria-hidden="true"></i> <a href="#">Facebook, Inc.</a></div>
                     <div><span className="fl-bigmug-line-big104"></span> <span>New York City, USA</span></div>
                   </div>
                 </div>
                 <div className="ml-auto">
-                  <a href="#" className="btn btn-secondary rounded-circle btn-favorite text-gray-500"><i class="fa fa-heart" aria-hidden="true"></i></a>
+                  <a href="#" className="btn btn-secondary rounded-circle btn-favorite text-gray-500"><i className="fa fa-heart" aria-hidden="true"></i></a>
                   <a href="job-single.html" className="btn btn-primary py-2" style={{marginLeft:"20px"}}>Apply Job</a>
                 </div>
               </div>
@@ -105,12 +105,12 @@ class LandingComponent extends React.Component {
                     </div>
                   </div>
                   <div className="job-post-item-body d-block d-md-flex">
-                    <div className="mr-3"><i class="fa fa-briefcase" aria-hidden="true"></i> <a href="#">Facebook, Inc.</a></div>
+                    <div className="mr-3"><i className="fa fa-briefcase" aria-hidden="true"></i> <a href="#">Facebook, Inc.</a></div>
                     <div><span className="fl-bigmug-line-big104"></span> <span>New York City, USA</span></div>
                   </div>
                 </div>
                 <div className="ml-auto">
-                  <a href="#" className="btn btn-secondary rounded-circle btn-favorite text-gray-500"><i class="fa fa-heart" aria-hidden="true"></i></a>
+                  <a href="#" className="btn btn-secondary rounded-circle btn-favorite text-gray-500"><i className="fa fa-heart" aria-hidden="true"></i></a>
                   <a href="job-single.html" className="btn btn-primary py-2" style={{marginLeft:"20px"}}>Apply Job</a>
                 </div>
               </div>
@@ -127,12 +127,12 @@ class LandingComponent extends React.Component {
                     </div>
                   </div>
                   <div className="job-post-item-body d-block d-md-flex">
-                    <div className="mr-3"><i class="fa fa-briefcase" aria-hidden="true"></i> <a href="#">Facebook, Inc.</a></div>
+                    <div className="mr-3"><i className="fa fa-briefcase" aria-hidden="true"></i> <a href="#">Facebook, Inc.</a></div>
                     <div><span className="fl-bigmug-line-big104"></span> <span>New York City, USA</span></div>
                   </div>
                 </div>
                 <div className="ml-auto">
-                  <a href="#" className="btn btn-secondary rounded-circle btn-favorite text-gray-500"><i class="fa fa-heart" aria-hidden="true"></i></a>
+                  <a href="#" className="btn btn-secondary rounded-circle btn-favorite text-gray-500"><i className="fa fa-heart" aria-hidden="true"></i></a>
                   <a href="job-single.html" className="btn btn-primary py-2" style={{marginLeft:"20px"}}>Apply Job</a>
                 </div>
               </div>
@@ -149,12 +149,12 @@ class LandingComponent extends React.Component {
                     </div>
                   </div>
                   <div className="job-post-item-body d-block d-md-flex">
-                    <div className="mr-3"><i class="fa fa-briefcase" aria-hidden="true"></i> <a href="#">Facebook, Inc.</a></div>
+                    <div className="mr-3"><i className="fa fa-briefcase" aria-hidden="true"></i> <a href="#">Facebook, Inc.</a></div>
                     <div><span className="fl-bigmug-line-big104"></span> <span>New York City, USA</span></div>
                   </div>
                 </div>
                 <div className="ml-auto">
-                  <a href="#" className="btn btn-secondary rounded-circle btn-favorite text-gray-500"><i class="fa fa-heart" aria-hidden="true"></i></a>
+                  <a href="#" className="btn btn-secondary rounded-circle btn-favorite text-gray-500"><i className="fa fa-heart" aria-hidden="true"></i></a>
                   <a href="job-single.html" className="btn btn-primary py-2" style={{marginLeft:"20px"}}>Apply Job</a>
                 </div>
               </div>
@@ -171,12 +171,12 @@ class LandingComponent extends React.Component {
                     </div>
                   </div>
                   <div className="job-post-item-body d-block d-md-flex">
-                    <div className="mr-3"><i class="fa fa-briefcase" aria-hidden="true"></i> <a href="#">Facebook, Inc.</a></div>
+                    <div className="mr-3"><i className="fa fa-briefcase" aria-hidden="true"></i> <a href="#">Facebook, Inc.</a></div>
                     <div><span className="fl-bigmug-line-big104"></span> <span>New York City, USA</span></div>
                   </div>
                 </div>
                 <div className="ml-auto">
-                  <a href="#" className="btn btn-secondary rounded-circle btn-favorite text-gray-500"><i class="fa fa-heart" aria-hidden="true"></i></a>
+                  <a href="#" className="btn btn-secondary rounded-circle btn-favorite text-gray-500"><i className="fa fa-heart" aria-hidden="true"></i></a>
                   <a href="job-single.html" className="btn btn-primary py-2" style={{marginLeft:"20px"}}>Apply Job</a>
                 </div>
               </div>
@@ -193,12 +193,12 @@ class LandingComponent extends React.Component {
                     </div>
                   </div>
                   <div className="job-post-item-body d-block d-md-flex">
-                    <div className="mr-3"><i class="fa fa-briefcase" aria-hidden="true"></i> <a href="#">Facebook, Inc.</a></div>
+                    <div className="mr-3"><i className="fa fa-briefcase" aria-hidden="true"></i> <a href="#">Facebook, Inc.</a></div>
                     <div><span className="fl-bigmug-line-big104"></span> <span>New York City, USA</span></div>
                   </div>
                 </div>
                 <div className="ml-auto">
-                  <a href="#" className="btn btn-secondary rounded-circle btn-favorite text-gray-500"><i class="fa fa-heart" aria-hidden="true"></i></a>
+                  <a href="#" className="btn btn-secondary rounded-circle btn-favorite text-gray-500"><i className="fa fa-heart" aria-hidden="true"></i></a>
                   <a href="job-single.html" className="btn btn-primary py-2" style={{marginLeft:"20px"}}>Apply Job</a>
                 </div>
               </div>
@@ -215,12 +215,12 @@ class LandingComponent extends React.Component {
                     </div>
                   </div>
                   <div className="job-post-item-body d-block d-md-flex">
-                    <div className="mr-3"><i class="fa fa-briefcase" aria-hidden="true"></i> <a href="#">Facebook, Inc.</a></div>
+                    <div className="mr-3"><i className="fa fa-briefcase" aria-hidden="true"></i> <a href="#">Facebook, Inc.</a></div>
                     <div><span className="fl-bigmug-line-big104"></span> <span>New York City, USA</span></div>
                   </div>
                 </div>
                 <div className="ml-auto">
-                  <a href="#" className="btn btn-secondary rounded-circle btn-favorite text-gray-500"><i class="fa fa-heart" aria-hidden="true"></i></a>
+                  <a href="#" className="btn btn-secondary rounded-circle btn-favorite text-gray-500"><i className="fa fa-heart" aria-hidden="true"></i></a>
                   <a href="job-single.html" className="btn btn-primary py-2" style={{marginLeft:"20px"}}>Apply Job</a>
                 </div>
               </div>
@@ -237,12 +237,12 @@ class LandingComponent extends React.Component {
                     </div>
                   </div>
                   <div className="job-post-item-body d-block d-md-flex">
-                    <div className="mr-3"><i class="fa fa-briefcase" aria-hidden="true"></i> <a href="#">Facebook, Inc.</a></div>
+                    <div className="mr-3"><i className="fa fa-briefcase" aria-hidden="true"></i> <a href="#">Facebook, Inc.</a></div>
                     <div><span className="fl-bigmug-line-big104"></span> <span>New York City, USA</span></div>
                   </div>
                 </div>
                 <div className="ml-auto">
-                  <a href="#" className="btn btn-secondary rounded-circle btn-favorite text-gray-500"><i class="fa fa-heart" aria-hidden="true"></i></a>
+                  <a href="#" className="btn btn-secondary rounded-circle btn-favorite text-gray-500"><i className="fa fa-heart" aria-hidden="true"></i></a>
                   <a href="job-single.html" className="btn btn-primary py-2" style={{marginLeft:"20px"}}>Apply Job</a>
                 </div>
               </div>
@@ -259,12 +259,12 @@ class LandingComponent extends React.Component {
                     </div>
                   </div>
                   <div className="job-post-item-body d-block d-md-flex">
-                    <div className="mr-3"><i class="fa fa-briefcase" aria-hidden="true"></i> <a href="#">Facebook, Inc.</a></div>
+                    <div className="mr-3"><i className="fa fa-briefcase" aria-hidden="true"></i> <a href="#">Facebook, Inc.</a></div>
                     <div><span className="fl-bigmug-line-big104"></span> <span>New York City, USA</span></div>
                   </div>
                 </div>
                 <div className="ml-auto">
-                  <a href="#" className="btn btn-secondary rounded-circle btn-favorite text-gray-500"><i class="fa fa-heart" aria-hidden="true"></i></a>
+                  <a href="#" className="btn btn-secondary rounded-circle btn-favorite text-gray-500"><i className="fa fa-heart" aria-hidden="true"></i></a>
                   <a href="job-single.html" className="btn btn-primary py-2" style={{marginLeft:"20px"}}>Apply Job</a>
                 </div>
               </div>
@@ -281,12 +281,12 @@ class LandingComponent extends React.Component {
                     </div>
                   </div>
                   <div className="job-post-item-body d-block d-md-flex">
-                    <div className="mr-3"><i class="fa fa-briefcase" aria-hidden="true"></i> <a href="#">Facebook, Inc.</a></div>
+                    <div className="mr-3"><i className="fa fa-briefcase" aria-hidden="true"></i> <a href="#">Facebook, Inc.</a></div>
                     <div><span className="fl-bigmug-line-big104"></span> <span>New York City, USA</span></div>
                   </div>
                 </div>
                 <div className="ml-auto">
-                  <a href="#" className="btn btn-secondary rounded-circle btn-favorite text-gray-500"><i class="fa fa-heart" aria-hidden="true"></i></a>
+                  <a href="#" className="btn btn-secondary rounded-circle btn-favorite text-gray-500"><i className="fa fa-heart" aria-hidden="true"></i></a>
                   <a href="job-single.html" className="btn btn-primary py-2" style={{marginLeft:"20px"}}>Apply Job</a>
                 </div>
               </div>

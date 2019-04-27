@@ -1,8 +1,28 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Dropdown, DropdownItem, DropdownMenu, DropdownToggle } from 'reactstrap';
+import PopupChangePass from './popupChangePass';
+import PopupConfirm from '../../common/popupconfirm'
+import { inject, observer } from "mobx-react"
+@inject("UserStore")
+@observer
 class Basepages extends React.Component {
 
+    constructor(props) {
+        super(props);
+        this.dropdownbarOpen = this.dropdownbarOpen.bind(this);
+        this.state = {
+            dropdownbarOpen: false
+        };
+    }
+    dropdownbarOpen() {
+        this.setState(prevState => ({
+            dropdownbarOpen: !prevState.dropdownbarOpen
+        }));
+    }
+
     render() {
+        const { UserStore } = this.props
         return (
             <div className="site-mobile-menu">
                 <div className="site-mobile-menu-header">
@@ -24,15 +44,34 @@ class Basepages extends React.Component {
                                 <nav className="site-navigation text-right" role="navigation">
 
                                     <ul className="site-menu js-clone-nav mr-auto d-lg-block">
-                                        <li 
+                                        <li
                                         // className="active"
                                         ><a href="index.html">Home</a></li>
                                         <li className="has-children"><a href="category.html">Category</a> </li>
-                                        <li><a href="about.html">For Candicate</a></li>
-                                        <li><a href="contact.html">For Employers</a></li>
-                                        <li><Link to="/register">Singin</Link></li>
-                                        <li><Link to="/login">Login</Link></li>
-                                        {/* <li><a href="new-post.html"><span className="rounded bg-primary py-2 px-3 text-white"><span className="h5 mr-2">+</span> Post a Job</span></a></li> */}
+                                        <li><Link to="/candidate">For Candidates</Link></li>
+                                        <li><Link to="/employers">For Employers</Link></li>
+                                        {UserStore.token !== "" ? (
+                                            <li>
+                                                <Dropdown isOpen={this.state.dropdownbarOpen} toggle={this.dropdownbarOpen} style={{ display: "inline-block" }}>
+                                                    <DropdownToggle className="dropdown-toggle btn btn-primary" style={{ background: "#007bff" }}>
+                                                        Hello, {UserStore.displayName || ""}
+                                                    </DropdownToggle>
+                                                    <DropdownMenu style={{ cursor: "pointer" }}>
+                                                        <div onClick={() => { UserStore.logout() }} className="dropdown-item" ><i className="text-danger ti-unlock"></i>Logout</div>
+                                                        <div onClick={() => { UserStore.popupChangePass = true }} className="dropdown-item" >Change Password</div>
+                                                    </DropdownMenu>
+                                                </Dropdown>
+                                            </li>
+                                        ) :
+                                            (
+                                                <React.Fragment>
+                                                    <li><Link to="/register">Singin</Link></li>
+                                                    <li><Link to="/login">Login</Link></li>
+                                                </React.Fragment>
+                                            )
+                                        }
+
+
                                     </ul>
                                 </nav>
                             </div>
@@ -43,7 +82,7 @@ class Basepages extends React.Component {
                     </div>
                 </header>
                 <div className="content-wrap">
-                {this.props.children}
+                    {this.props.children}
                 </div>
                 <div className="py-5 bg-primary">
                     <div className="container">
@@ -58,10 +97,17 @@ class Basepages extends React.Component {
                             </div>
                             <div className="col-md-3">
                                 <input type="submit" value="Send" className="btn btn-dark btn-block" style={{ height: "45px" }} />
-                         </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <PopupChangePass
+                    status={UserStore.popupChangePass}
+                    close={() => {
+                        UserStore.popupChangePass = !UserStore.popupChangePass
+                        UserStore.clearFormChangePass()
+                    }}
+                />
             </div>
         );
     }
@@ -69,3 +115,15 @@ class Basepages extends React.Component {
 }
 
 export default Basepages;
+
+
+{/* <li className="nav-item dropdown mr-30" >
+    <a className="nav-link nav-pill user-avatar" data-toggle="dropdown" href="javascript:void(0);" role="button" aria-haspopup="true" aria-expanded="false">
+        <img src="assets/images/profile-avatar.jpg" alt="avatar" />
+    </a>
+    <div className="dropdown-menu dropdown-menu-right" style={{ cursor: "pointer" }}>
+        <div onClick={() => { UserStore.logout() }} className="dropdown-item" ><i className="text-danger ti-unlock"></i>Thoát</div>
+        <div onClick={() => { UserStore.popupChangePass = true }} className="dropdown-item" >Đổi mật khẩu</div>
+        <div onClick={() => { UserStore.popupChangePass2 = true }} className="dropdown-item" >Đổi MK cấp 2</div>
+    </div>
+</li> */}

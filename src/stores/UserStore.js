@@ -3,11 +3,10 @@ import { apiRequestRBAC } from '../common/dataHandle';
 import UIStore from "./UIStore";
 
 const API_URL = window.CONSTANT.API_URL
-const API_OTP_URL = window.CONSTANT.API_OTP_URL
 const APPLICATION_ID = window.CONSTANT.APPLICATION_ID
 
 export class UserStore {
-  @observable token = ""
+  @observable token = "123"
   @observable usernameStam = ""
   @observable username = ""
   @observable password = ""
@@ -15,7 +14,7 @@ export class UserStore {
   @observable listPermissions = []
   @observable permissions = [""]
   @observable role = ""
-  @observable displayName = ""
+  @observable displayName = "ABC"
 
   //changepass
 

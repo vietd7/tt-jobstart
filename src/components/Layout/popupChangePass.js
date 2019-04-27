@@ -13,7 +13,7 @@ class popupChangePass extends React.Component {
 
         return (
             <Modal isOpen={status} toggle={() => { close() }}>
-                <ModalHeader>Đổi mật khẩu</ModalHeader>
+                <ModalHeader>Change Password</ModalHeader>
                 <form onSubmit={(e) => {
                     e.preventDefault()
                     UserStore.changePassword()
@@ -22,7 +22,7 @@ class popupChangePass extends React.Component {
                         <div className="form-row">
 
                             <div className="form-group col-md-6">
-                                <label >Mật khẩu mới:</label>
+                                <label >Current Password:</label>
                                 <input style={{ border: "1px solid #e6e3e3", padding: "8px 10px" }} type="password" className="form-control"
                                     value={UserStore.newPass}
                                     onChange={e => UserStore.newPass = e.target.value}
@@ -30,7 +30,7 @@ class popupChangePass extends React.Component {
                                 />
                             </div>
                             <div className="form-group col-md-6">
-                                <label >Nhập lại mật khẩu mới:</label>
+                                <label >New Password:</label>
                                 <input style={{ border: "1px solid #e6e3e3", padding: "8px 10px" }} type="password" className="form-control"
                                     required
                                     value={UserStore.newPass2}
@@ -38,28 +38,11 @@ class popupChangePass extends React.Component {
                                 />
                             </div>
                         </div>
-                        <div className="form-row">
-                            <div className="form-group col-md-6">
-                                <label >Mã OTP:</label>
-                                <input style={{ border: "1px solid #e6e3e3", padding: "8px 10px" }} type="text" className="form-control"
-                                    value={UserStore.otpChangePass}
-                                    onChange={e => UserStore.otpChangePass = e.target.value}
-                                    required
-                                />
-                            </div>
-                            <div className="form-group col-md-3">
-                                <label></label> <br />
-                                <Button style={{ margin: "9px" }} type="button" color="success" onClick={() =>
-                                    UIStore.getOTPCodePermission()
-                                } className="common-table-btn">
-                                    Lấy OTP
-                                </Button>
-                            </div>
-                        </div>
+                       
                     </ModalBody>
                     <ModalFooter className="moz-width" style={{ margin: "0 auto", border: "none", width: "fit-content" }}>
-                        <Button type="submit" color="primary" >Đồng ý</Button>
-                        <Button color="secondary" onClick={() => { close() }}>Hủy</Button>
+                        <Button type="submit" color="primary" >OK</Button>
+                        <Button color="secondary" onClick={() => { close() }}>Cancel</Button>
                     </ModalFooter>
                 </form>
             </Modal>
